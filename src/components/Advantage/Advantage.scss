@@ -1,0 +1,34 @@
+.advantage{
+  margin-top: 50px!important;
+}
+
+.advantage__list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantage__item{
+  text-align: center;
+  cursor: pointer;
+
+  .bx{
+    font-size: 260%;
+    color: rgb(106, 173, 13);
+  }
+}
+
+.advantage__title{
+  line-height: 30px;
+  margin-top: 15px;
+  margin-bottom: 3px;
+  text-transform: capitalize;
+  font-size: 120%;
+  color: #333;
+}
+
+.advantage__text{
+  line-height: 22px;
+  font-size: 100%;
+  color: #999;
+}
