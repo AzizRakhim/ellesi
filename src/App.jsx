@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero';
 import Advantage from './components/Advantage/Advantage';
 import Category from './components/Categories/Category';
 import Deal from './components/Deal/Deal';
+import Featured from './components/Featured/Featured';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
             <Hero />
             <Advantage />
             <Category />
-            <Deal countdownTimestampMs={1743673600000} />
+            <Deal countdownTimestampMs={1991973600000} />
+            <Featured />
           </>
         } />
       </Routes>
