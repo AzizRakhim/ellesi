@@ -15,6 +15,7 @@ const defaultRemainingTime = {
 }
 
 function Deal({countdownTimestampMs}) {
+
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
 
@@ -195,7 +196,9 @@ function Deal({countdownTimestampMs}) {
                             <span className="deal__inner-progress" style={{width : `${Math.round((item.sold * 100) / (item.sold + item.available))}%`}}></span>
                           </div>
                           <div>
-                            <button className="deal__cart-btn">
+                            <button 
+                            className="deal__cart-btn"
+                          >
                               add to cart
                             </button>
                           </div>

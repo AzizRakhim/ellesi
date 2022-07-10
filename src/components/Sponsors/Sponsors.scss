@@ -1,0 +1,18 @@
+.sponsor{
+  margin-bottom: 30px;
+}
+
+.sponsor__list{
+  img{
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+
+  img:hover{
+    opacity: 0.7;
+  }
+
+  &:hover .slick-arrow::before{
+    visibility: visible;
+  }
+}

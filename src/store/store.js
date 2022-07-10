@@ -151,6 +151,8 @@ let featured = [
   {
     id : 1,
     name : "cherry tomatoes",
+    oldPrice : 5,
+    price : 12,
     kilos : [
       {
         id : 1,
@@ -177,6 +179,8 @@ let featured = [
   {
     id : 2,
     name : "orange cauliflower",
+    oldPrice : 20,
+    price : 16,
     kilos : [
       {
         id : 1, 
@@ -190,6 +194,8 @@ let featured = [
   {
     id : 3,
     name : "plum tomato",
+    oldPrice : 15,
+    price : 10,
     kilos : [
       {
         id : 1,
@@ -216,6 +222,8 @@ let featured = [
   {
     id : 4,
     name : "white grape",
+    oldPrice : 15,
+    price : 10,
     kilos : [
       {
         id : 1,
@@ -229,6 +237,7 @@ let featured = [
   {
     id : 5,
     name : "pomegranate",
+    oldPrice : 5,
     price : 8,
     kilos : [
       {
@@ -258,6 +267,8 @@ let featured = [
     name : "navel orange",
     oldPrice : 20,
     discount : -20,
+    oldPrice : 25,
+    price : 20,
     limited : 'limited',
     kilos : [
       {
@@ -274,6 +285,8 @@ let featured = [
     name : "fresh strawberries",
     oldPrice : 20,
     discount : -50,
+    oldPrice : 6,
+    price : 10,
     limited : 'limited',
     kilos : [
       {
@@ -291,6 +304,8 @@ let featured = [
     price : 14,
     oldPrice : 20,
     discount : -30,
+    oldPrice : 20,
+    price : 10,
     kilos : [
       {
         id : 1,
@@ -304,6 +319,8 @@ let featured = [
   {
     id : 9,
     name : "red onion",
+    oldPrice : 15,
+    price : 12,
     kilos : [
       {
         id : 1,
@@ -632,6 +649,15 @@ const useStore = create((set) => ({
           el.active = true;
         }
       })
+    })
+  )),
+  
+  addedObj : [],
+  addCartToHandler : (elId) => set((state) => (
+    state.featured.map(item => {
+      if(item.id === elId){
+        state.addedObj.push(item);
+      }
     })
   ))
 }))

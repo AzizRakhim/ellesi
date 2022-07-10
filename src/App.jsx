@@ -7,6 +7,9 @@ import Category from './components/Categories/Category';
 import Deal from './components/Deal/Deal';
 import Featured from './components/Featured/Featured';
 import Shop from './components/Shop/Shop';
+import TopRated from './components/TopRated/TopRated';
+import Sponsors from './components/Sponsors/Sponsors';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
             <Deal countdownTimestampMs={1991973600000} />
             <Featured />
             <Shop />
+            <TopRated />
+            <Sponsors />
+            <Footer />
           </>
         } />
       </Routes>
